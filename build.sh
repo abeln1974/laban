@@ -1,5 +1,5 @@
 #!/bin/bash
-# Build script for MittOS - En operativsystem fra bunnen av
+# Build script for Laban - En operativsystem fra bunnen av
 
 set -e  # Avslutt scriptet hvis en kommando feiler
 
@@ -23,7 +23,7 @@ BOOTSECT_BIN="${BIN_DIR}/bootsect.bin"
 KERNEL_BIN="${BIN_DIR}/kernel.bin"
 OS_IMAGE="${BUILD_DIR}/os-image.bin"
 
-echo -e "${BLUE}Bygger MittOS...${NC}"
+echo -e "${BLUE}Bygger Laban...${NC}"
 
 # Variabler for nasm og gcc
 NASM_VERSION="2.16.01"
@@ -124,9 +124,9 @@ echo ""
 echo -e "${YELLOW}For å avslutte OS i QEMU, bruk ESC-tasten eller lukk QEMU-vinduet.${NC}"
 
 # Spør om brukeren vil kjøre OS-et nå
-echo -e "${BLUE}Vil du kjøre MittOS nå? (j/n)${NC}"
+echo -e "${BLUE}Vil du kjøre Laban nå? (j/n)${NC}"
 read -r svar
 if [[ "$svar" =~ ^[Jj] ]]; then
-    echo -e "${GREEN}Starter MittOS i QEMU...${NC}"
+    echo -e "${GREEN}Starter Laban i QEMU...${NC}"
     qemu-system-x86_64 -drive file=${OS_IMAGE},format=raw
 fi

@@ -1,11 +1,11 @@
-# MittOS - Et operativsystem fra bunnen av
+# Laban - Et operativsystem fra bunnen av
 
-MittOS er et minimalt operativsystem bygget fra bunnen av for å forstå grunnleggende OS-konsepter og lavnivåprogrammering.
+Laban er et minimalt operativsystem bygget fra bunnen av for å forstå grunnleggende OS-konsepter og lavnivåprogrammering.
 
 ## Prosjektstruktur
 
 ```
-MittOS/
+Laban/
 ├── build/             # Kompilerte binærfiler og objektfiler
 │   ├── bin/           # Binærfiler (bootloader.bin, kernel.bin)
 │   ├── obj/           # Objektfiler (.o)
@@ -51,7 +51,7 @@ Scriptet vil:
 
 ## Arkitektur
 
-MittOS er primært bygget for x86-arkitekturen og bruker:
+Laban er primært bygget for x86-arkitekturen og bruker:
 - 16-bit BIOS for oppstart
 - GDT (Global Descriptor Table) for å definere minnesegmenter
 - 32-bit protected mode for hovedkjøring av kjernen

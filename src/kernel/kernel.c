@@ -1,5 +1,5 @@
 /**
- * MittOS Kernel
+ * Laban Kernel
  * Hovedkjernekode for operativsystemet
  */
 
@@ -255,7 +255,7 @@ void main() {
     uint8_t text_color = vga_entry_color(VGA_COLOR_WHITE, VGA_COLOR_BLACK);
     uint8_t highlight_color = vga_entry_color(VGA_COLOR_LIGHT_CYAN, VGA_COLOR_BLACK);
     
-    print_at("**** MittOS Kernel ****", 28, 2, title_color);
+    print_at("**** Laban Kernel ****", 28, 2, title_color);
     print_at("Operativsystemet er na lastet og kjoerer!", 17, 5, text_color);
     print_at("Dette er et minimalt OS bygget fra bunnen av", 17, 7, text_color);
     print_at("Bootloaderen har lastet kjernen og kjorer i 32-bit protected mode", 10, 9, text_color);

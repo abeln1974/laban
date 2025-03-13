@@ -1,4 +1,4 @@
-; MittOS Bootloader
+; Laban Bootloader
 ; Forbedret bootloader med disklesing og kjernelasting
 
 [org 0x7c00]    ; Bootloader lastes på denne minneadressen
@@ -101,7 +101,7 @@ skriv_streng:
 
 ; Data
 boot_drive     db 0
-velkomstmelding db 'MittOS Bootloader startet!', 13, 10, 0
+velkomstmelding db 'Laban Bootloader startet!', 13, 10, 0
 les_disk_melding db 'Leser fra disk...', 13, 10, 0
 disk_suksess   db 'Disk lest suksessfullt!', 13, 10, 0
 disk_feil      db 'Feil ved lesing av disk!', 13, 10, 0

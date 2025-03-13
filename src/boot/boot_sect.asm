@@ -1,4 +1,4 @@
-; MittOS Boot Sector
+; Laban Boot Sector
 ; ------------------------------
 [org 0x7c00]        ; Bootloaderen lastes på denne adressen
 [bits 16]           ; Vi starter i 16-bit real mode
@@ -216,7 +216,7 @@ init_pm:
 ; Data
 ; ------------------------------
 BOOT_DRIVE db 0
-MSG_WELCOME db 'MittOS Bootloader startet!', 13, 10, 0
+MSG_WELCOME db 'Laban Bootloader startet!', 13, 10, 0
 MSG_LOAD_KERNEL db 'Laster kjerne fra disk...', 13, 10, 0
 MSG_LOAD_SUCCESS db 'Kjerne lastet til minnet!', 13, 10, 0
 MSG_DISK_ERROR db 'FEIL: Kunne ikke lese fra disk!', 13, 10, 0
