@@ -1,0 +1,19 @@
+# Kompilerte filer
+*.o
+*.bin
+*.img
+*.iso
+*.elf
+
+# Byggmapper
+/build/
+
+# Editor-spesifikke filer
+.vscode/
+.idea/
+*.swp
+*~
+
+# Operativsystem-spesifikke filer
+.DS_Store
+Thumbs.db
